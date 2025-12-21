@@ -1,3 +1,68 @@
-h1{
-    color:red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: #ffff;
+}
+
+.main-container{
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.sidebar{
+    flex: 1;
+    min-width: 200px;
+    border-right: 1px solid hsl(192, 19%, 95%, 25%);
+    padding: 10px;
+    justify-content: flex-end;
+    font-size: 2.4rem;
+}
+
+.sidebar nav{
+    justify-self: flex-end;
+    margin-right: 8rem;
+}
+
+.sidebar nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.sidebar nav ul li{
+    margin-bottom: 3rem;
+}
+
+.sidebar nav ul li i{
+    margin-right: 1rem;
+}
+
+.sidebar nav a{
+    text-decoration: none;
+    color: #ffff;
+    
+}
+
+.timeline{
+    flex: 2;
+    padding: 0 2rem;
+}
+
+.right-panel{
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    border-left: 1px solid hsl(192, 19%, 95%, 25%);
 }

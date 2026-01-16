@@ -1,17 +1,27 @@
 
 
-// main page
-exports.mainPage = (req,res,next) => {
-    res.render('main/homepage.ejs',{
-        tabHeader : "Ana Sayfa",
-        layout:'layouts/mainPagesTemplate'
+//main page
+exports.mainPage = (req, res, next) => {
+    res.render('main/homePage.ejs', {
+
+        tabHeader: "Ana Sayfa",
+
     });
 };
 
-//about us
-exports.aboutPage = (req,res,next) => {
-    res.render('main/aboutusPage.ejs',{
-        tabHeader: "Biz",
-        layout:'layouts/mainPagesTemplate' 
-    });
+exports.aboutPage = (req, res, next) => {
+
+    res.render('main/aboutusPage.ejs'), {
+       
+        tabHeader: "Hakkımızda"
+    }
 }
+
+exports.privacyPage = (req, res, next) => {
+    res.render('main/privacyPage.ejs'), {
+        
+        tabHeader: "Gizlilik Sözleşmesi"
+    }
+}
+
+

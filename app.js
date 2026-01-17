@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const mainRoutes = require('./routes/mainRoutes');
+const notesRoutes = require('./routes/notesRoutes');
 const loginRoutes = require('./routes/loginRoutes');
 const Users = require('./model/Users');
 const Courses = require('./model/Courses');
@@ -38,7 +38,7 @@ app.use(express.static("public"));
 
 
 // Public Pages
-app.use('', mainRoutes);
+app.use('', notesRoutes);
 app.use('',loginRoutes);
 
 // test DB 

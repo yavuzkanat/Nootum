@@ -23,6 +23,8 @@
     "express": "^5.2.1",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.18.2",
-    "nodemon": "^3.1.11"
+    "mysql2": "^3.16.1",
+    "nodemon": "^3.1.11",
+    "sequelize": "^6.37.7"
   }
 }
